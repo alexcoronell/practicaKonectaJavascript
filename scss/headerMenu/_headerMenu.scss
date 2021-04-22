@@ -1,0 +1,61 @@
+/*
+* Header
+*/
+.Header {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background-color: #FFFFFF;
+
+    &__Title {
+        display: block;
+        width: 100%;
+
+        h1 {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            line-height: 4rem;
+        }
+    }
+
+    &__Nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        background-color: rgba($mainColor, 0.8);
+
+        &__Menu {
+            list-style: none;
+            width: 240px;
+            margin: 0 auto;
+            display: flex;
+
+            &__Item {
+                width: 120px;
+                padding: 0;
+
+                &__Link {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    display: block;
+                    margin: 0;
+                    line-height: 2.6rem;
+
+                    &:hover {
+                        background-color: rgba($mainColor, 1.0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 991px) {}
+
+@media screen and (min-width: 1200px) {}

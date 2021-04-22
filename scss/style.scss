@@ -1,0 +1,36 @@
+/* 
+ * Reset 
+*/
+@import 'generic/reset';
+
+/* 
+ * Fonts
+*/
+@import 'generic/variables';
+
+/* 
+ * Main
+*/
+@import 'generic/main';
+
+/* 
+ * Fonts
+*/
+@import 'fonts/fonts';
+
+/* 
+ * Header and Menu
+*/
+@import 'headerMenu/headerMenu';
+
+/* 
+ * Footer
+*/
+@import 'footer/footer';
+
+
+/*
+ * Pages
+*/
+@import 'pages/mainPage';
+@import 'pages/calculadora';

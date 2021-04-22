@@ -1,0 +1,349 @@
+/* 
+ * Reset 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* 
+ * Fonts
+*/
+/* 
+ * Main
+*/
+/*
+* Generales
+*/
+body {
+  min-height: 100vh;
+}
+
+.Main {
+  width: 95%;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+/* 
+ * Fonts
+*/
+/**
+* Monserrat 100, 300, 400, 700, 900
+*/
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: #004d40;
+}
+
+p {
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p,
+a {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  line-height: 1.5rem;
+}
+
+/* 
+ * Header and Menu
+*/
+/*
+* Header
+*/
+.Header {
+  width: 100%;
+  display: block;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+.Header__Title {
+  display: block;
+  width: 100%;
+}
+.Header__Title h1 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 4rem;
+}
+.Header__Nav {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 77, 64, 0.8);
+}
+.Header__Nav__Menu {
+  list-style: none;
+  width: 240px;
+  margin: 0 auto;
+  display: flex;
+}
+.Header__Nav__Menu__Item {
+  width: 120px;
+  padding: 0;
+}
+.Header__Nav__Menu__Item__Link {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  line-height: 2.6rem;
+}
+.Header__Nav__Menu__Item__Link:hover {
+  background-color: #004d40;
+}
+
+/* 
+ * Footer
+*/
+.Footer {
+  width: 100%;
+  padding: 0.6rem 0;
+  background-color: #004d40;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+.Footer__Main {
+  text-align: center;
+  width: 100%;
+}
+
+/*
+ * Pages
+*/
+.Contactenos__Form {
+  border: 1px solid #004d40;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  transition: all 1s ease;
+}
+.Contactenos__Form .form-group {
+  width: 100%;
+  margin: 1.2rem auto;
+  padding: 0.4rem 0;
+  overflow: hidden;
+}
+.Contactenos__Form .form-group label {
+  display: block;
+  text-align: left;
+  color: #004d40;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+.Contactenos__Form .form-group input,
+.Contactenos__Form .form-group .Select {
+  display: block;
+  border: 1px solid #004d40;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.Contactenos__Form .form-group input:focus,
+.Contactenos__Form .form-group .Select:focus {
+  border: 2px solid #004d40;
+}
+.Contactenos__Form .form-group input option,
+.Contactenos__Form .form-group .Select option {
+  width: 50% !important;
+}
+.Contactenos__Form .form-group .Select {
+  padding: 0;
+}
+.Contactenos__Form .form-group select {
+  background-color: transparent;
+  width: 110%;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+}
+.Contactenos__Form .form-group .advertencia {
+  display: none;
+  background-color: red !important;
+  text-align: left;
+  font-size: 0.7rem;
+  position: absolute;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.7rem;
+  border-radius: 5px;
+}
+.Contactenos__Form .btnEnviar {
+  border: 1px solid #004d40;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  background-color: rgba(0, 77, 64, 0.7);
+  color: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.Contactenos__Form .btnEnviar:hover {
+  background-color: #004d40;
+}
+
+#Sendbox {
+  position: fixed;
+  display: none;
+  top: 40%;
+  width: 400px;
+  margin-left: -200px;
+  left: 50%;
+  border: 3px double #004d40;
+  background-color: #FFFFFF;
+  color: #004d40;
+  font-size: 2rem;
+  padding: 0;
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+  transition: all 2s ease;
+}
+
+@media screen and (min-width: 576px) {
+  .Contactenos__Form {
+    max-width: 500px;
+  }
+  .Contactenos__Form .btnEnviar {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Contactenos__Form {
+    width: 95%;
+    max-width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+  }
+  .Contactenos__Form .form-group {
+    width: 45%;
+    margin: 0.8rem auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Contactenos__Form .form-group {
+    margin: 0.3rem auto;
+  }
+}
+.Calculadora {
+  width: 100%;
+}
+.Calculadora__Form {
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.Calculadora__Form__Input {
+  border: 2px solid #004d40;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 10px;
+}
+.Calculadora__Form__Input input {
+  width: 110%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.Calculadora__Form__Operador {
+  width: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+.Calculadora__Form__Operador select {
+  width: 110%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  background: transparent;
+}
+.Calculadora__Form__Buttons {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.Calculadora__Form__Buttons button {
+  background-color: #004d40;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.Calculadora__Resultado {
+  border: 2px solid #004d40;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 10px;
+}
+.Calculadora__Resultado input {
+  width: 110%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

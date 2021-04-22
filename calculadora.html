@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Javascript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="Header">
+        <div class="Header__Title">
+            <h1>Práctica Javascript</h1>
+        </div>
+        <nav class="Header__Nav">
+            <ul class="Header__Nav__Menu">
+                <li class="Header__Nav__Menu__Item"><a href="index.html" class="Header__Nav__Menu__Item__Link">Inicio</a></li>
+                <li class="Header__Nav__Menu__Item"><a href="calculadora.html" class="Header__Nav__Menu__Item__Link">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Main Calculadora">
+        <h2>Calculadora</h2>
+        <form class="Calculadora__Form" id="Form">
+            <div class="Calculadora__Form__Input" id="numberAbox">
+                <input type="number" name="numberA" id="numberA">
+            </div>
+            <div class="Calculadora__Form__Operador">
+                <select name="operation" id="operation">
+                    <option value="" disabled selected id="selectDisabled">+ - x &#247;</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">&#247;</option>
+                </select>
+            </div>
+            <div class="Calculadora__Form__Input" id="numberBbox">
+                <input type="number" name="numberB" id="numberB">
+            </div>
+            <div class="Calculadora__Form__Buttons">
+                <button type="submit" id="calc">Calcular</button>
+                <button id="clean">Limpiar</button>
+            </div>
+        </form>
+        <div class="Calculadora__Resultado">
+            <input type="number" id="result" disabled>
+        </div>
+    </section>
+
+    <footer class="Footer">
+        <p class="Footer__Main">Desarrollado por Alexander Coronell</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+.Contactenos {
+
+    &__Form {
+        border: 1px solid $mainColor;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 1rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        transition: all 1s ease;
+
+        .form-group {
+            width: 100%;
+            margin: 1.2rem auto;
+            padding: .4rem 0;
+            overflow: hidden;
+
+            label {
+                display: block;
+                text-align: left;
+                color: $mainColor;
+                margin-bottom: .3rem;
+                font-size: .9rem;
+            }
+
+            input,
+            .Select {
+                display: block;
+                border: 1px solid $mainColor;
+                border-radius: 5px;
+                width: 100%;
+                padding: .5rem .5rem;
+                box-sizing: border-box;
+                font-size: .9rem;
+                overflow: hidden;
+
+                &:focus {
+                    border: 2px solid $mainColor;
+                }
+
+                option {
+                    width: 50% !important;
+                }
+            }
+
+            .Select {
+                padding: 0;
+            }
+
+            select {
+                background-color: transparent;
+                width: 110%;
+                color: rgba(#000000, 0.7);
+                padding: 0.5rem .5rem;
+                font-size: .9rem;
+            }
+
+            .advertencia {
+                display: none;
+                background-color: red !important;
+                text-align: left;
+                font-size: .7rem;
+                position: absolute;
+                margin-top: .2rem;
+                padding: .1rem .7rem;
+                border-radius: 5px;
+            }
+        }
+
+        .btnEnviar {
+            border: 1px solid $mainColor;
+            border-radius: 5px;
+            padding: 0.5rem 2rem;
+            background-color: rgba($mainColor, 0.7);
+            color: white;
+            margin: 0 auto;
+            margin-top: 1rem;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: rgba($mainColor, 1);
+            }
+        }
+    }
+}
+
+#Sendbox {
+    position: fixed;
+    display: none;
+    top: 40%;
+    width: 400px;
+    margin-left: -200px;
+    left: 50%;
+    border: 3px double $mainColor;
+    background-color: #FFFFFF;
+    color: $mainColor;
+    font-size: 2rem;
+    padding: 0;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    transition: all 2s ease;
+}
+
+@media screen and (min-width: 576px) {
+    .Contactenos {
+        &__Form {
+            max-width: 500px;
+
+            .btnEnviar {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Contactenos {
+        &__Form {
+            width: 95%;
+            max-width: 95%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+
+            .form-group {
+                width: 45%;
+                margin: 0.8rem auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Contactenos {
+        &__Form {
+
+            .form-group {
+                margin: 0.3rem auto;
+            }
+        }
+    }
+}

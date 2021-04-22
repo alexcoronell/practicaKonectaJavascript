@@ -1,0 +1,13 @@
+.Footer {
+    width: 100%;
+    padding: .6rem 0;
+    background-color: $mainColor;
+    color: white;
+    position: fixed;
+    bottom: 0;
+
+    &__Main {
+        text-align: center;
+        width: 100%;
+    }
+}
